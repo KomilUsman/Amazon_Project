@@ -20,14 +20,14 @@ public class etsy_Step {
     public void user_navigates_to_etsy_com_webpage() {
       //Navigating to https://www.etsy.com
         Driver.getDriver().get("https://www.etsy.com");
-        Browser_Util.waitFor(1);
+        Browser_Util.waitFor(3);
     }
 
     @When("user scrolls down element on the down of the webpage")
     public void user_scrolls_down_element_on_the_down_of_the_webpage() {
        // scrollToElement(); it will scroll to element we want to click
         etsyPage.scrollToElement();
-        Browser_Util.waitFor(1);
+        Browser_Util.waitFor(3);
     }
 
     @When("user clicks each elements to open new window")
@@ -40,6 +40,7 @@ public class etsy_Step {
             etsyPage.listOfIcons.get(i).click();
 
         }
+        Browser_Util.waitFor(3);
         for (int i = 0; i < listOf_ActualTitle.length; i++) {
           //by using moveTo method and providing count(index) we are switching open windows tab
             etsyPage.moveTo(count);
@@ -47,6 +48,7 @@ public class etsy_Step {
             //Storing the title of all the open tabs to String Arrays
             listOf_ActualTitle[i] = Driver.getDriver().getTitle();
             count--;
+            Browser_Util.waitFor(3);
         }
 
     }

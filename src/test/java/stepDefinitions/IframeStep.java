@@ -13,11 +13,12 @@ public class IframeStep {
     @Given("navigates to Amazon homepage")
     public void navigates_to_amazon_homepage() {
         Driver.getDriver().get(ConfigReader.read("amazonUrl"));
+        Browser_Util.waitFor(3);
     }
     @When("user locate iframe")
     public void user_locate_iframe() {
         Driver.getDriver().switchTo().frame(iframeStep.iframe);
-        Browser_Util.waitFor(2);
+        Browser_Util.waitFor(3);
 
     }
     @Then("user should able to get attribute of iframe")

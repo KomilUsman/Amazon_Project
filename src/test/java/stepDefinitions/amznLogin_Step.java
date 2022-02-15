@@ -4,6 +4,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.AmznLoginPage;
+import utilities.Browser_Util;
 import utilities.ConfigReader;
 import utilities.Driver;
 
@@ -27,11 +28,13 @@ public class amznLogin_Step {
     @When("user provide correct username {string} and password {string}")
     public void user_provide_correct_username_and_password(String userName, String password) {
         amznLoginPage.signIn(userName, password);
+        Browser_Util.waitFor(3);
     }
 
     @Then("verify user logged in successfully {string}")
     public void verify_user_logged_in_successfully(String expected) {
         assertEquals(expected, amznLoginPage.loginVerification.getText());
+
     }
 
 }

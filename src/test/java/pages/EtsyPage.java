@@ -26,5 +26,6 @@ public class EtsyPage {
         ArrayList<String> newTab = new ArrayList<>(Driver.getDriver().getWindowHandles());
         Driver.getDriver().switchTo().window(newTab.get(indexNum));
 
+
     }
 }
