@@ -23,6 +23,7 @@ public class IframeStep {
     @Then("user should able to get attribute of iframe")
     public void user_should_able_to_get_attribute_of_iframe() {
         String name = iframeStep.attribute.getAttribute("style");
+        System.out.println(name);
         Assert.assertEquals("background-color: transparent;",name);
     }
 }

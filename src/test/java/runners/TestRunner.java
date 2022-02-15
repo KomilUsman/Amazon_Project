@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         }
         ,publish=true
         ,dryRun = false
-        //,tags = "@ui"
+        ,tags = "@EtsyFeature"
 
 
 )
