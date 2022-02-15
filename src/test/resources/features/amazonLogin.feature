@@ -1,4 +1,4 @@
-@Amznlogin
+"@amazon
 Feature: Amazon login functionality
   Scenario: user should be able to login
 
