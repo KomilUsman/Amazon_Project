@@ -33,7 +33,7 @@ public class amznLogin_Step {
 
     @Then("verify user logged in successfully {string}")
     public void verify_user_logged_in_successfully(String expected) {
-        assertEquals(expected, amznLoginPage.loginVerification.getText());
+        assertEquals(expected+"sad", amznLoginPage.loginVerification.getText());
 
     }
 

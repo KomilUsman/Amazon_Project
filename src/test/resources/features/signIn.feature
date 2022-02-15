@@ -1,4 +1,4 @@
-@signIn
+@smoke
 Feature:User should be able to create account
   Scenario:User can create account
     Given user go to Amazon homepage

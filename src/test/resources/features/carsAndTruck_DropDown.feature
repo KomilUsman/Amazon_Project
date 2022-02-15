@@ -1,4 +1,4 @@
-@carsAndTruck
+@smoke
 Feature: testing find car and truck functionality
   Scenario:user should able to fill the form and find the cars
 

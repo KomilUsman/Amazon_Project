@@ -1,4 +1,4 @@
-@EtsyFeature
+@smoke
 Feature: Etsy functionality
   Scenario: User should able to scroll down on Etsy webpage
   and able to click different window tabs and open them
